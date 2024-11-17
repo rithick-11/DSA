@@ -1,5 +1,3 @@
-arr = list(map(int, input("Enter a number :").strip(" ").split(" ")))
-
 def binary_search(arr, low, high, target):
     if low > high :
         return -1
@@ -32,4 +30,7 @@ def binary(arr, target):
     return binary_search(arr, low, high, target)
 
 
-print(binary(arr, 16))
+arr = list(map(int, input("Enter a number :").strip(" ").split(" ")))
+target = int(input("Enter the target value :"))
+
+print(binary(arr, target))
